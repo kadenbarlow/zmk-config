@@ -17,7 +17,7 @@
 // | F3  | F4  |  TAB   |  Q   |  W  |  E   |  R  |  T  |        |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  \  | END  |
 // | F5  | F6  |  ESC    |  A   |  S  |  D   |  F  |  G  |        |  H  |  J  |  K  |  L  |  ;  |  '  |   ENTER  | PGUP |
 // | F7  | F8  |  SHIFT   |  Z   |  X  |  C  |  V   |  B  |        |  N  |  M  |  ,  |  .  |  /  |  RSHFT  |  UP | PGDN |
-// | F9  | F1  |  LCTRL   | FN | LALT | LGUI  |   SPACE    |      |    SPACE   | RGUI | RALT | RCTRL | LFT | DWN | RGHT |
+// | F9  | F10 |  LCTRL   | FN | LALT | LGUI  |   SPACE    |      |    SPACE   | RGUI | RALT | RCTRL | LFT | DWN | RGHT |
 // ---------------------------------------------------------------------------------------------------------------------
 
         default_layer {
