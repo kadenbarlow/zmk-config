@@ -1,0 +1,12 @@
+file_format: "1"
+id: frenzy
+name: Frenzy Rev. 1
+type: shield
+url: https://github.com/keebio/frenzy-rev1-pcb
+requires: [pro_micro]
+features:
+  - keys
+  - encoder
+siblings:
+  - frenzy_left
+  - frenzy_right
