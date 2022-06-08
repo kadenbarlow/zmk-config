@@ -13,11 +13,11 @@
         compatible = "zmk,keymap";
 
 // ---------------------------------------------------------------------------------------------------------------------
-// | POW | F12 |  `    |  1   |  2  |  3   |  4  |  5  |  6  |      |  7  |  8  |  9  |  0  |  -  |  =  |  BKSPC | DEL  |
+// | POW | F12 |  ESC  |  1   |  2  |  3   |  4  |  5  |  6  |      |  7  |  8  |  9  |  0  |  -  |  =  |  BKSPC | DEL  |
 // | PREV| NEXT|  TAB   |  Q   |  W  |  E   |  R  |  T  |        |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  \  | END  |
-// | MUTE| PLAY|  ESC    |  A   |  S  |  D   |  F  |  G  |        |  H  |  J  |  K  |  L  |  ;  |  '  |   ENTER  | PGUP |
+// | MUTE| PLAY|  CAPS   |  A   |  S  |  D   |  F  |  G  |        |  H  |  J  |  K  |  L  |  ;  |  '  |   ENTER  | PGUP |
 // | VOLD| VOLU|  SHIFT   |  Z   |  X  |  C  |  V   |  B  |        |  N  |  M  |  ,  |  .  |  /  |  RSHFT  |  UP | PGDN |
-// | BRID| BRIU|  LCTRL | FN/CAPS | LALT | LGUI  |   SPACE   |    |    SPACE   | RGUI | RALT | RCTRL | LFT | DWN | RGHT |
+// | BRID| BRIU|  LCTRL | FN      | LALT | LGUI  |   SPACE   |    |    SPACE   | RGUI | RALT | RCTRL | LFT | DWN | RGHT |
 // ---------------------------------------------------------------------------------------------------------------------
 
         default_layer {
