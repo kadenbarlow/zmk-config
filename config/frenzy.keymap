@@ -33,18 +33,18 @@
 // Todo should I move the forward slash up one key at all? that one might be weird
 // ---------------------------------------------------------------------------------------------------------------------
 // | BT1 | BTC |       |  F1  | F2  | F3   | F4  | F5  | F6  |      | F7  | F8  | F9  | F10 | F11 | F12 |        |      |
-// | BT2 | BTN |        |      |     |   `  | TAB |  ^  |        |    |  {  | AMPS | PIPE |     |    |     |     |      |
+// | BT2 | BTN |        |      |  $  |   `  | TAB |  ^  |        |    |  {  | AMPS | PIPE |     |    |     |     |      |
 // | BT3 | BTP |        |       | LALT |LCTRL| ESC |  }   |       | LFT | DWN | UP | RGHT | ENTER |     |        | PLAY |
-// | BT4 | F17 |         |      |     |   $  |  !   |  @  |        |  [  |  ]  |  /  |     |     |   F16   |VOLU | MUTE |
+// | BT4 | F17 |         |      |     |      |  !   |  @  |        |  [  |  ]  |  /  |     |     |   F16   |VOLU | MUTE |
 // | BT5 | F18 |          |    |      |       |   ENTER    |      |    BKSPC   |      |      |       |PREV |VOLD |NEXT  |
 // ---------------------------------------------------------------------------------------------------------------------
 
         ergonomic_layer {
             bindings = <
     &bt BT_SEL 0 &bt BT_CLR &trans &kp F1 &kp F2   &kp F3    &kp F4  &kp F5  &kp F6    /**/ &kp F7   &kp F8   &kp F9   &kp F10   &kp F11    &kp F12       &trans        &trans
-    &bt BT_SEL 1 &bt BT_NXT &trans &trans &trans   &kp GRAVE &kp TAB &kp CARET         /**/ &trans   &kp LBRC &kp AMPS &kp PIPE  &trans     &trans        &trans        &trans &trans
+    &bt BT_SEL 1 &bt BT_NXT &trans &trans &DLLR    &kp GRAVE &kp TAB &kp CARET         /**/ &trans   &kp LBRC &kp AMPS &kp PIPE  &trans     &trans        &trans        &trans &trans
     &bt BT_SEL 2 &bt BT_PRV &trans &kp A  &kp LALT &kp LCTRL &kp ESC &kp RBRC          /**/ &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp RET    &trans        &trans        &kp C_PP 
-    &bt BT_SEL 3 &kp F17    &trans &trans &trans   &kp DLLR  &kp EXCL  &kp AT          /**/ &kp LBKT &kp RBKT &kp BSLH &trans    &trans     &kp F16       &kp C_VOL_UP  &kp K_MUTE
+    &bt BT_SEL 3 &kp F17    &trans &trans &trans   &trans    &kp EXCL  &kp AT          /**/ &kp LBKT &kp RBKT &kp BSLH &trans    &trans     &kp F16       &kp C_VOL_UP  &kp K_MUTE
     &bt BT_SEL 4 &kp F18    &trans &trans &trans   &trans    &kp RET                   /**/ &kp BSPC &trans   &trans   &trans    &kp C_PREV &kp C_VOL_DN  &kp C_NEXT
             >;
         };
