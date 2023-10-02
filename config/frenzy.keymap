@@ -14,41 +14,42 @@
 
 // ---------------------------------------------------------------------------------------------------------------------
 // | F19 | F20 |  `    |  1   |  2  |  3   |  4  |  5  |  6  |      |  7  |  8  |  9  |  0  |  -  |  =  |  BKSPC | DEL  |
-// | PREV| NEXT|  TAB   |  Q   |  W  |  E   |  R  |  T  |        |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  \  | END  |
-// | MUTE| PLAY|  ESC  | A/SHFT | S/ALT | D/CTL |  F  |  G  |     |  H  |  J  |  K  |  L  |  ;  |  '  |   ENTER  | PGUP |
+// | PREV| NEXT|  TAB   |  Q   |  W  |  E  |  R  |  T  |         |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  \  | END  |
+// | MUTE| PLAY|  ESC    |  A  |  S  |  D  |  F  |  G  |          |  H  |  J  |  K  |  L  |  ;  |  '  |   ENTER  | PGUP |
 // | VOLD| VOLU|  SHIFT   |  Z   |  X  |  C  |  V   |  B  |        |  N  |  M  |  ,  |  .  |  /  |  RSHFT  |  UP | PGDN |
 // | BRID| BRIU|  LCTRL | FN/CAPS | LALT | LGUI  |   SPACE   |    |    SPACE   | RGUI | RALT | RCTRL | LFT | DWN | RGHT |
 // ---------------------------------------------------------------------------------------------------------------------
 
         default_layer {
             bindings = <
-    &kp F19      &kp F20      &kp GRAVE &kp N1      &kp N2     &kp N3      &kp N4 &kp N5 &kp N6   /**/ &kp N7      &kp N8   &kp N9    &kp N0    &kp MINUS &kp EQUAL &kp BSPC &kp DEL
-    &kp C_PREV   &kp C_NEXT   &lt 2 TAB &kp Q       &kp W      &kp E       &kp R  &kp T           /**/ &kp Y       &kp U    &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT &kp BSLH &kp END
-    &kp K_MUTE   &kp C_PP     &kp ESC   &mt LSHFT A &mt LALT S &mt LCTRL D &kp F  &kp G           /**/ &kp H       &kp J    &kp K     &kp L     &kp SEMI  &kp SQT   &kp RET  &kp PG_UP
-    &kp C_VOL_DN &kp C_VOL_UP &kp LSHFT &kp Z       &kp X      &kp C       &kp V  &kp B           /**/ &kp N       &kp M    &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT &kp UP   &kp PG_DN
-    &kp C_BRI_DN &kp C_BRI_UP &kp LCTRL &lt 2 CAPS  &kp LALT   &kp LGUI    &lt 1 SPACE            /**/ &lt 1 SPACE &kp RGUI &kp RALT  &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT
+    &kp F19      &kp F20      &kp GRAVE &kp N1 &kp N2 &kp N3   &kp N4   &kp N5 &kp N6   /**/ &kp N7      &kp N8   &kp N9    &kp N0    &kp MINUS &kp EQUAL &kp BSPC &kp DEL
+    &kp C_PREV   &kp C_NEXT   &lt 2 TAB &kp Q  &kp W  &kp E    &kp R    &kp T           /**/ &kp Y       &kp U    &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT &kp BSLH &kp END
+    &kp K_MUTE   &kp C_PP     &kp ESC   &kp A  &kp S  &kp D    &kp F    &kp G           /**/ &kp H       &kp J    &kp K     &kp L     &kp SEMI  &kp SQT   &kp RET  &kp PG_UP
+    &kp C_VOL_DN &kp C_VOL_UP &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B           /**/ &kp N       &kp M    &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT &kp UP   &kp PG_DN
+    &kp C_BRI_DN &kp C_BRI_UP &kp LCTRL &lt 2 CAPS    &kp LALT &kp LGUI &lt 1 SPACE            /**/ &lt 1 SPACE &kp RGUI &kp RALT  &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
 
+// Todo should I move the forward slash up one key at all? that one might be weird
 // ---------------------------------------------------------------------------------------------------------------------
 // | BT1 | BTC |       |  F1  | F2  | F3   | F4  | F5  | F6  |      | F7  | F8  | F9  | F10 | F11 | F12 |        |      |
 // | BT2 | BTN |        |      |     |   `  | TAB |  ^  |        |    |  {  | AMPS | PIPE |     |    |     |     |      |
-// | BT3 | BTP |        | SHIFT | LALT |LCTRL| ESC |  }   |       | LFT | DWN | UP | RGHT | ENTER |     |        | PLAY |
+// | BT3 | BTP |        |       | LALT |LCTRL| ESC |  }   |       | LFT | DWN | UP | RGHT | ENTER |     |        | PLAY |
 // | BT4 | F17 |         |      |     |   $  |  !   |  @  |        |  [  |  ]  |  /  |     |     |   F16   |VOLU | MUTE |
 // | BT5 | F18 |          |    |      |       |   ENTER    |      |    BKSPC   |      |      |       |PREV |VOLD |NEXT  |
 // ---------------------------------------------------------------------------------------------------------------------
 
         ergonomic_layer {
             bindings = <
-    &bt BT_SEL 0 &bt BT_CLR &trans &kp F1    &kp F2   &kp F3    &kp F4  &kp F5  &kp F6    /**/ &kp F7   &kp F8   &kp F9   &kp F10   &kp F11    &kp F12       &trans        &trans
-    &bt BT_SEL 1 &bt BT_NXT &trans &trans    &trans   &kp GRAVE &kp TAB &kp CARET         /**/ &trans   &kp LBRC &kp AMPS &kp PIPE  &trans     &trans        &trans        &trans &trans
-    &bt BT_SEL 2 &bt BT_PRV &trans &kp LSHFT &kp LALT &kp LCTRL &kp ESC &kp RBRC          /**/ &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp RET    &trans        &trans        &kp C_PP 
-    &bt BT_SEL 3 &kp F17    &trans &trans    &trans   &kp DLLR  &kp EXCL  &kp AT          /**/ &kp LBKT &kp RBKT &kp BSLH &trans    &trans     &kp F16       &kp C_VOL_UP  &kp K_MUTE
-    &bt BT_SEL 4 &kp F18    &trans &trans    &trans   &trans    &kp RET                   /**/ &kp BSPC &trans   &trans   &trans    &kp C_PREV &kp C_VOL_DN  &kp C_NEXT
+    &bt BT_SEL 0 &bt BT_CLR &trans &kp F1 &kp F2   &kp F3    &kp F4  &kp F5  &kp F6    /**/ &kp F7   &kp F8   &kp F9   &kp F10   &kp F11    &kp F12       &trans        &trans
+    &bt BT_SEL 1 &bt BT_NXT &trans &trans &trans   &kp GRAVE &kp TAB &kp CARET         /**/ &trans   &kp LBRC &kp AMPS &kp PIPE  &trans     &trans        &trans        &trans &trans
+    &bt BT_SEL 2 &bt BT_PRV &trans &kp A  &kp LALT &kp LCTRL &kp ESC &kp RBRC          /**/ &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp RET    &trans        &trans        &kp C_PP 
+    &bt BT_SEL 3 &kp F17    &trans &trans &trans   &kp DLLR  &kp EXCL  &kp AT          /**/ &kp LBKT &kp RBKT &kp BSLH &trans    &trans     &kp F16       &kp C_VOL_UP  &kp K_MUTE
+    &bt BT_SEL 4 &kp F18    &trans &trans &trans   &trans    &kp RET                   /**/ &kp BSPC &trans   &trans   &trans    &kp C_PREV &kp C_VOL_DN  &kp C_NEXT
             >;
         };
 
-// ---------------------------------------------------------------------------------------------------------------------
+// --------
 // |     |     |       |      |     |      |     |     |     |      |     |     |     |     |     |     |  BKSPC |      |
 // |     |     |        |      |     |      |     |     |        |     |  7  |  8  |  9  |  -  |     |     |     |      |
 // |     |     |         |      |     |      |     |     |        |     |  4  | 5   |  6  |  +  |     | ENTER    |      |
