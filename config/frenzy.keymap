@@ -17,7 +17,7 @@
 // | PREV| NEXT|  TAB   |  Q   |  W  |  E  |  R  |  T  |         |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  \  | END  |
 // | MUTE| PLAY|  ESC    |  A  |  S  |  D  |  F  |  G  |          |  H  |  J  |  K  |  L  |  ;  |  '  |   ENTER  | PGUP |
 // | VOLD| VOLU|  SHIFT   |  Z   |  X  |  C  |  V   |  B  |        |  N  |  M  |  ,  |  .  |  /  |  RSHFT  |  UP | PGDN |
-// | BRID| BRIU|  LCTRL | FN/CAPS | LALT | LGUI  |   SPACE   |    |    SPACE   | RGUI | RALT | RCTRL | LFT | DWN | RGHT |
+// | BRID| BRIU|  LCTRL | FN/CAPS | LALT | LGUI  |   LAYER1  |    |    SPACE   | RGUI | RALT | RCTRL | LFT | DWN | RGHT |
 // ---------------------------------------------------------------------------------------------------------------------
 
         default_layer {
@@ -26,7 +26,7 @@
     &kp C_PREV   &kp C_NEXT   &lt 2 TAB &kp Q  &kp W  &kp E    &kp R    &kp T           /**/ &kp Y       &kp U    &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT &kp BSLH &kp END
     &kp K_MUTE   &kp C_PP     &kp ESC   &kp A  &kp S  &kp D    &kp F    &kp G           /**/ &kp H       &kp J    &kp K     &kp L     &kp SEMI  &kp SQT   &kp RET  &kp PG_UP
     &kp C_VOL_DN &kp C_VOL_UP &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B           /**/ &kp N       &kp M    &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT &kp UP   &kp PG_DN
-    &kp C_BRI_DN &kp C_BRI_UP &kp LCTRL &lt 2 CAPS    &kp LALT &kp LGUI &lt 1 SPACE            /**/ &lt 1 SPACE &kp RGUI &kp RALT  &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT
+    &kp C_BRI_DN &kp C_BRI_UP &kp LCTRL &lt 2 CAPS    &kp LALT &kp LGUI &mo 1                  /**/ &lt 1 SPACE &kp RGUI &kp RALT  &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
 
