@@ -10,7 +10,7 @@
 
 / {
     behaviors {
-        hmb: homerow_mods  {
+        hmb: homerow_mods_balanced  {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
@@ -19,7 +19,7 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-        hmi: homerow_mods  {
+        hmi: homerow_mods_interrupted  {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
